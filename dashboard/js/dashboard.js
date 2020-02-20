@@ -122,12 +122,19 @@ function setTestInformation($testName, $browser, $browserVersion, $platform, $pr
         "class=\"mr-1\" width=\"48px\" height=\"48px\"><small>" + $retentionDate + "</small></span>");
     if ($build.toString().length > 0) {
         const buildElement = $("#build");
+        const buildUrlRoot = "https://synergyci.chemaxon.com/job/PLEXUSPLATFORM/job/review/";
+        const buildLinkElement = "";
         buildElement.html("");
         buildElement.removeClass("p-0");
         buildElement.addClass("p-1");
         buildElement.parent().removeClass("invisible");
         buildElement.append("<img alt=\"Build\" src=\"img/build.png\" class=\"mr-1\" width=\"48px\" height=\"48px\">");
-        buildElement.append("<small class=\"mr-1\">" + $build + "</small>");
+        //buildElement.append("<small class=\"mr-1\">" + $build + "</small>");
+        buildElement.append(
+            buildLinkElement.concat(
+                "<small class=\"mr-1\"><a href=\"", buildUrlRoot, $build, "\">", $build, "</a></small>"
+            )
+        );
     } else {
         const buildElement = $("#build");
         buildElement.html("");
