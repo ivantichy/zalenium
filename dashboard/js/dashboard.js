@@ -45,12 +45,12 @@ function addTestItem(item) {
         "</div>" +
         "<div class=\"d-flex w-100 justify-content-between\">" +
         "<span>" +
-        "<img alt=\"" + platformLogo + "\" src=\"img/" + platformLogo + ".png\" width=\"24px\" height=\"24px\">" +
+        "<img alt=\"" + platformLogo + "\" src=\"img/" + platformLogo + ".png\" width=\"0px\" height=\"0px\">" +
         "<img alt=\"" + item.browser + "\" src=\"img/" + item.browser.toLowerCase() + ".png\" width=\"24px\" height=\"24px\">" +
         "<small class=\"pl-1\">" + item.browserVersion + "</small>" +
         "</span>" +
         "<span>" +
-        "<img alt=\"" + item.testStatus + "\" src=\"img/" + item.testStatus.toLowerCase() + ".png\" width=\"24px\" height=\"24px\">" +
+        "<img alt=\"" + item.testStatus + "\" src=\"img/" + item.testStatus.toLowerCase() + ".png\" width=\"128px\" height=\"36px\">" +
         "</span>" +
         "</div>" +
         "</a>";
@@ -92,7 +92,7 @@ function setTestInformation($testName, $browser, $browserVersion, $platform, $pr
     const testName = $("#test-name");
     testName.html("");
     testName.append("<img alt=\"" + $testStatus + "\" src=\"img/" + $testStatus.toLowerCase() + ".png\" class=\"mr-1\" " +
-        "width=\"48px\" height=\"48px\">");
+        "width=\"128px\" height=\"36px\">");
     testName.append($testName);
     testName.append("<small class=\"float-right\">" + $dateTime + "</small>");
 
@@ -104,7 +104,7 @@ function setTestInformation($testName, $browser, $browserVersion, $platform, $pr
         "width=\"48px\" height=\"48px\">");
     browserPlatformProxy.append($browserVersion);
     browserPlatformProxy.append("<img alt=\"" + $proxyName + "\" src=\"img/" + $proxyName.toLowerCase() + ".png\" class=\"float-right\" " +
-        "width=\"48px\" height=\"48px\">");
+        "width=\"0px\" height=\"0px\">");
 
     const screenResolutionTimeZone = $("#screen-resolution-time-zone");
     screenResolutionTimeZone.html("");
