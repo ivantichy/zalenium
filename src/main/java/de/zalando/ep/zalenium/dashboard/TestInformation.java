@@ -149,6 +149,10 @@ public class TestInformation {
         this.testStatus = testStatus;
     }
 
+    public void setTestName(String testName) {
+        this.testName = testName;
+    }
+
     public void buildSeleniumLogFileName() {
         String fileName = Dashboard.LOGS_FOLDER_NAME + "/" + testNameNoExtension + "/";
         if (ZALENIUM_PROXY_NAME.equalsIgnoreCase(proxyName)) {

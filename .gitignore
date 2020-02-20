@@ -15,3 +15,7 @@ bin/
 .classpath
 .settings
 .vscode
+
+.gradle/
+docker_push.log
+

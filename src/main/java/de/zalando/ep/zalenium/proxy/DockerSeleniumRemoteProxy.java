@@ -312,6 +312,9 @@ public class DockerSeleniumRemoteProxy extends DefaultRemoteProxy {
                             testInformation.setTestStatus(TestInformation.TestStatus.FAILED);
                         }
                     }
+                    if ("zaleniumTestNameOverride".equalsIgnoreCase(cookieName)) {
+                        testInformation.setTestName(cookie.get("value").getAsString());
+                    }
                     if ("zaleniumMessage".equalsIgnoreCase(cookieName)) {
                         String message = cookie.get("value").getAsString();
                         if (ContainerFactory.getIsKubernetes().get()) {
