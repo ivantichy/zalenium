@@ -40,12 +40,12 @@ function addTestItem(item) {
         "<div class=\"d-flex w-100 justify-content-between\">" +
         "<small>" + item.timestamp + "</small>" +
         "<small>" +
-        "<img alt=\"" + item.proxyName + "\" src=\"img/" + item.proxyName.toLowerCase() + ".png\" width=\"24px\" height=\"24px\">" +
+        "<img class=\"invisible\" alt=\"" + item.proxyName + "\" src=\"img/" + item.proxyName.toLowerCase() + ".png\" width=\"0px\" height=\"0px\">" +
         "</small>" +
         "</div>" +
         "<div class=\"d-flex w-100 justify-content-between\">" +
         "<span>" +
-        "<img alt=\"" + platformLogo + "\" src=\"img/" + platformLogo + ".png\" width=\"0px\" height=\"0px\">" +
+        "<img alt=\"" + platformLogo + "\" src=\"img/" + platformLogo + ".png\" width=\"24px\" height=\"24px\">" +
         "<img alt=\"" + item.browser + "\" src=\"img/" + item.browser.toLowerCase() + ".png\" width=\"24px\" height=\"24px\">" +
         "<small class=\"pl-1\">" + item.browserVersion + "</small>" +
         "</span>" +
