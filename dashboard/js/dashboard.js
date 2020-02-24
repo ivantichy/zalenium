@@ -50,7 +50,7 @@ function addTestItem(item) {
         "<small class=\"pl-1\">" + item.browserVersion + "</small>" +
         "</span>" +
         "<span>" +
-        "<img alt=\"" + item.testStatus + "\" src=\"img/" + item.testStatus.toLowerCase() + ".png\" width=\"128px\" height=\"36px\">" +
+        "<img alt=\"" + item.testStatus + "\" src=\"img/" + item.testStatus.toLowerCase() + ".png\" width=\"92px\" height=\"24px\">" +
         "</span>" +
         "</div>" +
         "</a>";
@@ -92,7 +92,7 @@ function setTestInformation($testName, $browser, $browserVersion, $platform, $pr
     const testName = $("#test-name");
     testName.html("");
     testName.append("<img alt=\"" + $testStatus + "\" src=\"img/" + $testStatus.toLowerCase() + ".png\" class=\"mr-1\" " +
-        "width=\"128px\" height=\"36px\">");
+        "width=\"92px\" height=\"24px\">");
     testName.append($testName);
     testName.append("<small class=\"float-right\">" + $dateTime + "</small>");
 
